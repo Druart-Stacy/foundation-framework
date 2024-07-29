@@ -1,0 +1,32 @@
+<!-- Utilitaires JavaScript (Modale) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modale avec Foundation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+  <style>
+    .reveal {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button class="button" data-open="exampleModal1">Ouvrir la Modale</button>
+  <div class="reveal" id="exampleModal1" data-reveal>
+    <h1>Super Modale</h1>
+    <p class="lead">Voici une modale simple créée avec Foundation.</p>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

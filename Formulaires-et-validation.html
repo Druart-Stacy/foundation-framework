@@ -1,0 +1,37 @@
+<!--  Formulaires et validation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire avec Validation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+  <style>
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:blue;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form data-abide novalidate>
+    <label>Nom
+      <input type="text" placeholder="Votre nom" required>
+    </label>
+    <span class="form-error">Ce champ est requis.</span>
+    <label>Email
+      <input type="email" placeholder="Votre email" required>
+    </label>
+    <span class="form-error">Un email valide est requis.</span>
+    <button type="submit" class="button">Soumettre</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
